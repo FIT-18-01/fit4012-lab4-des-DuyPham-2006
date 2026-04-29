@@ -1,0 +1,7 @@
+# Ensure shell scripts and text files use LF endings on all platforms
+*.sh text eol=lf
+*.md text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.txt text eol=lf
