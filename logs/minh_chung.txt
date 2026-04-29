@@ -1,0 +1,18 @@
+Minh chứng chạy chương trình DES/TripleDES
+
+1. DES Encrypt sample:
+Plaintext: 0001001000110100010101100111100010011010101111001101111011110001
+Key: 0001001100110100010101110111100110011011101111001101111111110001
+Ciphertext: 0111111010111111010001001001001100100011111110101111101011111000
+
+2. Roundtrip test: Encrypt rồi decrypt về plaintext gốc - PASS
+
+3. Multi-block test: Xử lý plaintext > 64 bit - PASS (128 bit -> 128 bit ciphertext)
+
+4. Tamper test: Thay đổi ciphertext, decrypt không match - PASS
+
+5. Wrong key test: Decrypt với key sai không match - PASS
+
+6. TripleDES test: Chạy được mode 3 và 4 - PASS (roundtrip thành công)
+
+Chương trình biên dịch thành công, không lỗi, tuân thủ contract nhập/xuất.

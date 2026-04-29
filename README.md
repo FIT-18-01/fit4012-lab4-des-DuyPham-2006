@@ -57,33 +57,34 @@ cmake --build build
 
 ## 3. Input / Đầu vào
 
-TODO_STUDENT: Mô tả rõ đầu vào của chương trình sau khi em hoàn thiện bài lab.
+Chương trình nhận dữ liệu từ stdin theo định dạng sau:
 
-Gợi ý nên nêu:
-- plaintext đang được nhập như thế nào
-- key đang được nhập như thế nào
-- chương trình nhận 1 block hay nhiều block
-- định dạng dữ liệu là chuỗi bit, chuỗi ký tự hay file
+- Đầu tiên nhập mode (1, 2, 3, hoặc 4)
+- Tùy mode, nhập các tham số tương ứng dưới dạng chuỗi nhị phân.
+
+Plaintext và key được nhập dưới dạng chuỗi bit (0 và 1).
+
+Đối với DES (mode 1 và 2), chương trình hỗ trợ multi-block: chia plaintext thành các block 64-bit, mã hóa tuần tự.
+
+Đối với TripleDES (mode 3 và 4), chỉ xử lý 1 block 64-bit.
 
 ## 4. Output / Đầu ra
 
-TODO_STUDENT: Mô tả rõ đầu ra của chương trình.
+Chương trình in ra kết quả cuối cùng dưới dạng chuỗi nhị phân dài.
 
-Gợi ý nên nêu:
-- ciphertext hiển thị ra sao
-- có in round keys hay không
-- có hỗ trợ giải mã hay không
-- với TripleDES thì đầu ra gồm những gì
+- Đối với DES encrypt/decrypt: ciphertext/plaintext sau khi xử lý multi-block.
+- Đối với TripleDES: ciphertext/plaintext 64-bit.
+
+Có thể in round keys trong quá trình debug, nhưng kết quả cuối cùng là chuỗi nhị phân hợp lệ.
 
 ## 5. Padding đang dùng
 
-TODO_STUDENT: Giải thích cơ chế padding em dùng.
+Sử dụng zero padding cho DES multi-block.
 
-Gợi ý:
-- nếu plaintext dài hơn 64 bit thì chia block như thế nào
-- nếu thiếu bit thì pad bằng `0` ra sao
-- hạn chế của zero padding là gì
-- vì sao cách này chỉ phù hợp cho bài học nhập môn, không phải thiết kế an toàn hoàn chỉnh trong thực tế
+- Plaintext được chia thành các block 64-bit.
+- Nếu block cuối thiếu bit, thêm '0' vào cuối để đủ 64 bit.
+- Hạn chế: Zero padding không an toàn vì không phân biệt được padding và dữ liệu thật có '0' ở cuối.
+- Phù hợp cho bài học nhập môn, không dùng trong thực tế vì thiếu cơ chế kiểm tra tính toàn vẹn.
 
 ## 6. Tests bắt buộc
 

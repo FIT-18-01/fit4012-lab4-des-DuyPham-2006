@@ -1,5 +1,6 @@
 # Build outputs
 des
+des.exe
 build/
 *.o
 *.out
@@ -8,4 +9,7 @@ build/
 .vscode/
 .idea/
 *.swp
+
+# Test input files
+input_*.txt
 .DS_Store
