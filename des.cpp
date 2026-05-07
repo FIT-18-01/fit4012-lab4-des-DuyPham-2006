@@ -282,7 +282,7 @@ int main() {
         string ciphertext;
         ciphertext.reserve(blocks.size() * 64);
         for (const string& block : blocks) ciphertext += des_encrypt_block(block, key);
-        cout << ciphertext;
+        cout << ciphertext << endl;
         return 0;
     }
 
@@ -299,7 +299,7 @@ int main() {
         for (size_t i = 0; i < ciphertext.size(); i += 64) {
             plaintext += des_decrypt_block(ciphertext.substr(i, 64), key);
         }
-        cout << plaintext;
+        cout << plaintext << endl;
         return 0;
     }
 
@@ -317,7 +317,7 @@ int main() {
         string c1 = des_encrypt_block(plaintext64, k1);
         string c2 = des_decrypt_block(c1, k2);
         string c3 = des_encrypt_block(c2, k3);
-        cout << c3;
+        cout << c3 << endl;
         return 0;
     }
 
@@ -335,11 +335,10 @@ int main() {
         string p1 = des_decrypt_block(ciphertext64, k3);
         string p2 = des_encrypt_block(p1, k2);
         string p3 = des_decrypt_block(p2, k1);
-        cout << p3;
+        cout << p3 << endl;
         return 0;
     }
 
     cerr << "Mode must be 1, 2, 3 or 4\n";
     return 1;
 }
-.

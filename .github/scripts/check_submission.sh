@@ -89,4 +89,3 @@ if [[ -x ./des || -f ./des ]]; then
 fi
 
 echo "[SUCCESS] Repo đáp ứng bộ kiểm tra nộp bài cơ bản cho FIT4012 Lab 4."
-.

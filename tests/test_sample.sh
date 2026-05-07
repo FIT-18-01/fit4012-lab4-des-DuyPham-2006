@@ -16,4 +16,3 @@ fi
 
 echo "[PASS] Sample DES program produced the expected ciphertext."
 rm -f des_test
-.

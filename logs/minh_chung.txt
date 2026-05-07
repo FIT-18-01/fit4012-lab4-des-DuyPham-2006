@@ -15,4 +15,4 @@ Ciphertext: 0111111010111111010001001001001100100011111110101111101011111000
 
 6. TripleDES test: Chạy được mode 3 và 4 - PASS (roundtrip thành công)
 
-Chương trình biên dịch thành công, không lỗi, tuân thủ contract nhập/xuất..
+Chương trình biên dịch thành công, không lỗi, tuân thủ contract nhập/xuất.

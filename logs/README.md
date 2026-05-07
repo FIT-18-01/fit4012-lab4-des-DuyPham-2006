@@ -10,4 +10,3 @@ Ví dụ file có thể đặt ở đây:
 - ảnh chụp màn hình hoặc log test
 
 Lưu ý: file này chỉ là hướng dẫn, **không được tính là minh chứng nộp bài**.
-.

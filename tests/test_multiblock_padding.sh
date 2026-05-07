@@ -22,4 +22,3 @@ else
     echo "Multi-block test failed: expected $plaintext, got $decrypted"
     exit 1
 fi
-.

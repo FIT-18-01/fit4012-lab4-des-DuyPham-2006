@@ -8,4 +8,3 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(des des.cpp)
 
 target_compile_options(des PRIVATE -Wall -Wextra -pedantic)
-.

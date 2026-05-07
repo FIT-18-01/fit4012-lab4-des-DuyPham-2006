@@ -41,4 +41,3 @@ if [[ "$DEC_ACTUAL" != "$PLAINTEXT" ]]; then
 fi
 
 pass "Q4 đạt: TripleDES encrypt/decrypt đúng theo vector kiểm thử."
-.

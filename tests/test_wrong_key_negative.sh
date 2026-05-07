@@ -23,4 +23,3 @@ else
     echo "Wrong key test failed: decrypted with wrong key matches original"
     exit 1
 fi
-.

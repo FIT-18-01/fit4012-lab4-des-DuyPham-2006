@@ -25,4 +25,3 @@ if [[ "$ACTUAL" != "$EXPECTED" ]]; then
 fi
 
 pass "Q2 đạt: có nhập từ bàn phím và xử lý multi-block + zero padding đúng theo vector kiểm thử."
-.
