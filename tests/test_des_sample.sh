@@ -20,3 +20,4 @@ else
     echo "DES sample test failed: expected $expected_ciphertext, got $ciphertext"
     exit 1
 fi
+.

@@ -26,3 +26,4 @@ jobs:
 
       - name: Auto-check Q4 (TripleDES encrypt/decrypt)
         run: bash .github/grading/test_q4.sh
+.

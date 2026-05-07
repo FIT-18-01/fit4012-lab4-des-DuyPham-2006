@@ -14,3 +14,4 @@ fail() {
 pass() {
   echo "[PASS] $1"
 }
+.

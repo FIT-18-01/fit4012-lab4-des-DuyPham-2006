@@ -29,3 +29,4 @@ else
     echo "Tamper test failed: decrypted tampered ciphertext matches original"
     exit 1
 fi
+.

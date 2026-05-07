@@ -15,3 +15,4 @@ Chương trình biên dịch thành công, chạy được các mode. Test round
 ## Kết luận / Conclusion
 
 Học được cách triển khai DES và TripleDES, hạn chế của zero padding. Hướng mở rộng: sử dụng padding an toàn hơn như PKCS7, tích hợp với hệ thống lớn hơn.
+.

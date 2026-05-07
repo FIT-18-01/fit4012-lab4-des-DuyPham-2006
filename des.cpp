@@ -342,3 +342,4 @@ int main() {
     cerr << "Mode must be 1, 2, 3 or 4\n";
     return 1;
 }
+.
